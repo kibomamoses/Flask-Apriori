@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apriori Algorithm</title>
+</head>
+<style>
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  background: rgb(179, 192, 179);
+  width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color:rgb(102, 102, 62);
+  max-width: 100%;
+  padding: 5px;
+  overflow-y:scroll;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:rgb(141, 108, 108);
+  padding: 5px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  max-width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background:rgb(25, 31, 25);
+  margin-bottom: 5px;
+  font-size: x-large;
+  
+ 
+
+}
+
+h2.title
+{
+ color:black;
+}
+
+h5.footer
+{
+  color:black;
+}
+</style>
+
+<body>
+<div class="header">
+    <h2 class ="title">APRIORI ALGORITHM RESULTS</h2>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>FILENAME PROCESSED BY APRIORI ALGORITHM </h2>
+        <h5>  {{filename}}
+        </h5>
+
+      </div>
+      <div class="card">
+        <h2>INPUT FILE CONTENTS</h2>
+        
+        <div class="fakeimg" style="height:200px;">
+        {{content}}
+        </div>
+    
+      </div>
+
+      <div class="card">
+        <h2>ITEM Set Results</h2>
+        <h5></h5>
+        <div class="fakeimg" style="height:200px;">
+        {{res}}
+                                                                                            
+        </div>
+    
+      </div>
+
+
+    <div class="card">
+      <h2>all Results</h2>
+    
+      <div class="footer" style="height:160px;">
+      <p><h5>TOTAL ITEMS: <b><i>{{ total_item}}  </i>  </b></p> </h5>
+      <p><h5>GIVEN MIN-SUPPORT: <b><i>{{ s }}  </i>  </b></p> </h5>
+      <p><h5>APRIORI ALGORITHM RUN-TIME:<b><i> {{  program_run_time }} hrs:mins:sec.ms </i>  </b> </p> </h5>
+
+      
+    </div>
+      <br>  <br>
+      <b>&copy; Copyright 2022</b>
+      </div>
+      
+    </div>
+
+
+  </div>
+  
+</body>
+</html>
+
+
+
